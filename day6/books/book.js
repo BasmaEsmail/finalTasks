@@ -5,17 +5,19 @@ booksReq.onreadystatechange=function(){
     {
         console.log(booksReq.status)
         var books= JSON.parse(booksReq.responseText);
-        console.log(books)
-        // var row= document.createElement("div");
-        // row.setAttribute("id","row");
-        // row.setAttribute("border","black 2px solid");
-        // row.setAttribute("style","display:flex; flex-wrap:wrap;")
-        for(var i=0;i<books.length;i++)
+        
+        var list= document.createElement("ol");
+        list.setAttribute("class","list")
+        for(var i =0;i<books.items.length;i++)
         {
-           console.log(books)
-            
+        var item = document.createElement("li");
+        item.innerHTML= books.items[i].volumeInfo.title;
+        
+        list.appendChild(item);
+
         }
-        //document.body.appendChild(row);
+        document.body.appendChild(list);
+
     }
 }
 booksReq.send();
