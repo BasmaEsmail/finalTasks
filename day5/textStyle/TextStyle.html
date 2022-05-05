@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>--- Text Style ---</title>
+
+    <style type="text/css">
+        table#Text {
+            width: 550px;
+            border-collapse: collapse;
+        }
+
+        table#Text tr {
+            vertical-align: top;
+        }
+        
+
+        #PAR {
+            font-family: times new roman;
+            font-size: 11pt;
+            width: 550px;
+            border: solid 1;
+            padding: 10;
+            text-align: left;
+            
+        }
+
+        table#Text td {
+            font-family: times new roman;
+            font-size: 11pt;
+            
+        }
+
+    </style>
+    <script src="script2.js">
+       
+    </script>
+</head>
+
+<body>
+
+    <p id="PAR">
+        Here is a paragraph of text that has various alignment characteristics that can be changed
+        dynamically. Click the radio buttons below to view combinations of text style settings.
+    </p>
+
+    <table id="Text" border="1">
+        <tr>
+            <td>
+                <b>fontFamily</b><br />
+                <input type="radio" name="Font" value="arial" onclick="font(this)" checked />arial<br />
+                <input type="radio" name="Font" value="courier" onclick="font(this)" />courier<br />
+                <input type="radio" name="Font" value = "georgia" onclick="font(this)" />georgia<br />
+                <input type="radio" name="Font" value="impact" onclick="font(this)" />impact<br />
+                <input type="radio" name="Font" value= "times new roman" onclick="font(this)" />times new roman<br />
+                <input type="radio" name="Font" value= "verdana" onclick="font(this)" />verdana<br />
+            </td>
+
+            <td>
+                <b>textAlign</b><br>
+                <input type="radio" name="Align" value="left" onclick="alignm(this)" checked />left<br />
+                <input type="radio" name="Align" value="center" onclick="alignm(this)" />center<br />
+                <input type="radio" name="Align" value="right" onclick="alignm(this)" />right<br />
+                <input type="radio" name="Align" value="justify" onclick="alignm(this)" />justify<br />
+            </td>
+            <td>
+                <b>lineHeight</b><br>
+                <input type="radio" name="Height" value ="normal" onclick="lineHeight(this)" checked />normal<br />
+                <input type="radio" name="Height" value="10px" onclick="lineHeight(this)" />10px<br />
+                <input type="radio" name="Height" value="15px" onclick="lineHeight(this)" />15px<br />
+                <input type="radio" name="Height" value="1.5" onclick="lineHeight(this)" />1.5<br />
+            </td>
+            <td>
+                <b>letterSpacing</b><br>
+                <input type="radio" name="Lspace" value= "normal" onclick="letter(this)" checked />normal<br />
+                <input type="radio" name="Lspace" value="-1px" onclick="letter(this)" />-1px<br />
+                <input type="radio" name="Lspace"  value= "2px"onclick="letter(this)" />2px<br />
+                <input type="radio" name="Lspace" value="3px"onclick="letter(this)" />3px<br />
+            </td>
+            <td>
+                <b>textIndent</b><br>
+                <input type="radio" name="Indent" value="0px" onclick="indent(this)" checked />0px<br />
+                <input type="radio" name="Indent" value="5px"onclick="indent(this)" />5px<br />
+                <input type="radio" name="Indent"value="15px" onclick="indent(this)" />15px<br />
+                <input type="radio" name="Indent"value="25px" onclick="indent(this)" />25px<br />
+            </td>
+            <td>
+                <b>textTransform</b><br>
+                <input type="radio" name="Transform" value="none"onclick="transform(this)" checked />none<br />
+                <input type="radio" name="Transform" value="capitalize" onclick="transform(this)" />capitalize<br />
+                <input type="radio" name="Transform"value="uppercase" onclick="transform(this)" />uppercase<br />
+                <input type="radio" name="Transform" value="lowercase"onclick="transform(this)" />lowercase<br />
+            </td>
+            <td>
+                <b>textDecoration</b><br>
+                <input type="radio" name="Decorate" value="none"onclick="decorate(this)" checked />none<br />
+                <input type="radio" name="Decorate"  value="line-through"onclick="decorate(this)" />line-through<br />
+                <input type="radio" name="Decorate" value="overline"onclick="decorate(this)" />overline<br />
+                <input type="radio" name="Decorate" value="underline" onclick="decorate(this)" />underline<br />
+            </td>
+            <td>
+                <b>textBorder</b><br>
+                <input type="radio" name="Border" value="none"onclick="borderSty(this)" checked />none<br />
+                <input type="radio" name="Border" value="dotted" onclick="borderSty(this)" />dotted<br />
+                <input type="radio" name="Border" value="double" onclick="borderSty(this)" />double<br />
+                <input type="radio" name="Border"  value="groove" onclick="borderSty(this)" />groove<br />
+                <input type="radio" name="Border"  value="dashed" onclick="borderSty(this)" />dashed<br />
+                <input type="radio" name="Border" value="inset" onclick="borderSty(this)" />inset<br />
+                <input type="radio" name="Border"  value="solid" onclick="borderSty(this)" />solid<br />
+                <input type="radio" name="Border" value="outset" onclick="borderSty(this)" />outset<br />
+                <input type="radio" name="Border" value="ridge" onclick="borderSty(this)" />ridge<br />
+            </td>
+            <td>
+                <b>Bordercolor</b><br>
+                <input type="radio" name="BorderColor" value="black" onclick="borderCol(this)" checked />none<br />
+                <input type="radio" name="BorderColor" value="pink"onclick="borderCol(this)" />pink<br />
+                <input type="radio" name="BorderColor"value= "red"onclick="borderCol(this)" />red<br />
+                <input type="radio" name="BorderColor"value="green"onclick="borderCol(this)"/>green<br />
+                <input type="radio" name="BorderColor"value="blue" onclick="borderCol(this)" />blue<br />
+                <input type="radio" name="BorderColor"value="yellow" onclick="borderCol(this)" />yellow<br />
+                <input type="radio" name="BorderColor"value="purple" onclick="borderCol(this)" />purple<br />
+            </td>
+
+    </table>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
